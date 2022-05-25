@@ -1,0 +1,22 @@
+﻿<Window x:Class="Airlanes.EditUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airlanes"
+        mc:Ignorable="d"
+        Title="EditUser" Height="450" Width="543.2" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Email address" HorizontalAlignment="Left" Margin="85,25,0,0" VerticalAlignment="Top" FontFamily="/Airlanes;component/Resources/fonts/#TeX Gyre Adventor" FontSize="16"/>
+        <Label Content="First name" HorizontalAlignment="Left" Margin="85,95,0,0" VerticalAlignment="Top" FontFamily="/Airlanes;component/Resources/fonts/#TeX Gyre Adventor" FontSize="16"/>
+        <Label Content="Last name" HorizontalAlignment="Left" Margin="85,155,0,0" VerticalAlignment="Top" FontFamily="/Airlanes;component/Resources/fonts/#TeX Gyre Adventor" FontSize="16"/>
+        <Label Content="Office" HorizontalAlignment="Left" Margin="85,220,0,0" VerticalAlignment="Top" FontFamily="/Airlanes;component/Resources/fonts/#TeX Gyre Adventor" FontSize="16"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="35" Margin="235,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185"/>
+        <TextBox x:Name="first_name" HorizontalAlignment="Left" Height="35" Margin="235,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185"/>
+        <TextBox x:Name="last_name" HorizontalAlignment="Left" Height="35" Margin="235,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185"/>
+        <ComboBox x:Name="office" HorizontalAlignment="Left" Margin="235,228,0,0" VerticalAlignment="Top" Width="185" Height="25" DisplayMemberPath="Title" SelectedValuePath="Title"/>
+        <Button x:Name="apply" Content="Apply" HorizontalAlignment="Left" Margin="85,345,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="apply_Click"/>
+        <Button x:Name="cansel" Content="Cancel" HorizontalAlignment="Left" Margin="345,345,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="cansel_Click"/>
+
+    </Grid>
+</Window>
